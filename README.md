@@ -4,6 +4,8 @@ Repository that provides a JAX and NumPY implementation of the **low-rank tensor
 
 > [“Low-Rank Tensors for Multi-Dimensional Markov Models” (2024)](https://arxiv.org/abs/2411.02098) by Madeline Navarro, Sergio Rozada, Antonio G. Marques, Santiago Segarra
 
+The original github repository accompanying the paper can be found here (PyTorch implementation): https://github.com/sergiorozada12/tensor-mc
+
 The code focuses on the *transition kernel* factorization (their Eq. (2)) and the vectorized ADMM formulation around Eqs. (10)–(11), with both:
 
 - a **2D special case** (nice and readable), and  
@@ -17,8 +19,8 @@ The easiest way to set things up is with [`uv`](https://github.com/astral-sh/uv)
 
 ```bash
 # Clone the repo
-git clone <your-repo-url>.git
-cd <your-repo-folder>
+git clone https://github.com/conorheins/lrtjax.git
+cd lrtjax
 
 # Create and activate a virtualenv with uv
 uv venv .venv
